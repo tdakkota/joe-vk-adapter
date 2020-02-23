@@ -2,6 +2,7 @@ package vk
 
 import "github.com/go-joe/joe"
 
+// Adapter returns a new vk Adapter as joe.Module.
 func Adapter(token string, opts ...Option) joe.Module {
 	return joe.ModuleFunc(func(joeConf *joe.Config) error {
 		conf := Config{Token: token}

@@ -1,17 +1,20 @@
+// Package vk implements a VK adapter for the joe bot library.
 package vk
 
 import (
 	"context"
+	"strconv"
+
 	"github.com/SevereCloud/vksdk/api"
 	"github.com/SevereCloud/vksdk/longpoll-bot"
 	"github.com/SevereCloud/vksdk/object"
 	"github.com/go-joe/joe"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
-	"math/rand"
-	"strconv"
 )
 
+// BotAdapter implements a joe.Adapter that reads and writes messages to and
+// from VK.
 type BotAdapter struct {
 	vk      *api.VK
 	lp      longpoll.Longpoll
@@ -19,6 +22,7 @@ type BotAdapter struct {
 	logger  *zap.Logger
 }
 
+// Config contains the configuration of a BotAdapter.
 type Config struct {
 	Token  string
 	Logger *zap.Logger
@@ -26,6 +30,9 @@ type Config struct {
 
 var ErrGetBotInfo = errors.New("failed to get bot info")
 
+// NewAdapter creates a new *BotAdapter that connects to VK. Note that you
+// will usually configure the VK adapter as joe.Module (i.e. using the
+// Adapter function of this package).
 func NewAdapter(ctx context.Context, conf Config) (*BotAdapter, error) {
 	vk := api.Init(conf.Token)
 
@@ -64,8 +71,10 @@ func NewAdapter(ctx context.Context, conf Config) (*BotAdapter, error) {
 	return b, nil
 }
 
+// Send implements joe.Adapter by sending all received text messages to the
+// given chat.
 func (b *BotAdapter) Send(text, chat string) error {
-	peerID, err := strconv.ParseInt(chat, 10, 64)
+	peerID, err := strconv.Atoi(chat)
 	if err != nil {
 		return b.sendDomain(text, chat)
 	}
@@ -81,26 +90,28 @@ func (b *BotAdapter) sendDomain(text, domain string) error {
 	_, err := b.vk.MessagesSend(api.Params{
 		"domain":    domain,
 		"message":   text,
-		"random_id": rand.Intn(100),
+		"random_id": 0,
 	})
 
 	return err
 }
 
-func (b *BotAdapter) sendPeerID(text string, peerID int64) error {
+func (b *BotAdapter) sendPeerID(text string, peerID int) error {
 	b.logger.Info("Sending message to chat",
-		zap.Int64("peer_id", peerID),
+		zap.Int("peer_id", peerID),
 	)
 
 	_, err := b.vk.MessagesSend(api.Params{
 		"peer_id":   peerID,
 		"message":   text,
-		"random_id": rand.Intn(100),
+		"random_id": 0,
 	})
 
 	return err
 }
 
+// RegisterAt implements the joe.Adapter interface by emitting the vk API
+// events to the given brain.
 func (b *BotAdapter) RegisterAt(brain *joe.Brain) {
 	go func() {
 		err := b.lp.Run()
@@ -176,6 +187,7 @@ func (b *BotAdapter) dispatch(object object.MessageNewObject) interface{} {
 	}
 }
 
+// Close disconnects the adapter from the vk API.
 func (b *BotAdapter) Close() error {
 	b.lp.Shutdown()
 	return nil

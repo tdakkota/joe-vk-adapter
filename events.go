@@ -4,6 +4,7 @@ import (
 	"github.com/SevereCloud/vksdk/object"
 )
 
+// ChatCreateEvent struct
 type ChatCreateEvent struct {
 	Channel string // The id of created channel.
 	Text    string // Chat title
@@ -12,6 +13,7 @@ type ChatCreateEvent struct {
 	Data interface{}
 }
 
+// ChatTitleUpdateEvent struct
 type ChatTitleUpdateEvent struct {
 	Channel string // The id of created channel.
 	NewText string // New chat title
@@ -20,6 +22,7 @@ type ChatTitleUpdateEvent struct {
 	Data interface{}
 }
 
+// ChatPhotoUpdateEvent struct
 type ChatPhotoUpdateEvent struct {
 	Channel  string                            // The id of created channel.
 	NewPhoto object.MessagesMessageActionPhoto // The object with new cover photo urls
@@ -29,6 +32,7 @@ type ChatPhotoUpdateEvent struct {
 	Data interface{}
 }
 
+// ChatPinUpdateEvent struct
 type ChatPinUpdateEvent struct {
 	Channel   string // The id of created channel.
 	UserID    string // A string identifying the user who changed pin
@@ -39,6 +43,7 @@ type ChatPinUpdateEvent struct {
 	Data interface{}
 }
 
+// UserEnteredChatEvent struct
 type UserEnteredChatEvent struct {
 	Channel string // The channel over which the message was received.
 	UserID  string // A string identifying the new user in chat
@@ -48,6 +53,7 @@ type UserEnteredChatEvent struct {
 	Data interface{}
 }
 
+// UserLeavedChatEvent struct
 type UserLeavedChatEvent struct {
 	Channel string // The channel over which the message was received.
 	UserID  string // A string identifying the leaved user in chat

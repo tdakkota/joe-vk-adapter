@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-joe/joe"
-	"github.com/go-joe/redis-memory"
-	"github.com/tdakkota/joe-vk-adapter"
 	"os"
 	"strings"
+
+	"github.com/go-joe/joe"
+	"github.com/go-joe/redis-memory"
+	vk "github.com/tdakkota/joe-vk-adapter"
 )
 
 type ExampleBot struct {

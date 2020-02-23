@@ -1,7 +1,8 @@
 <h1 align="center">Joe Bot - Vk Adapter</h1>
-<p align="center">
-	<a href="https://godoc.org/github.com/tdakkota/vk"><img src="https://img.shields.io/badge/godoc-reference-blue.svg?color=blue"></a>
-</p>
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/tdakkota/joe-vk-adapter)](https://goreportcard.com/report/github.com/tdakkota/joe-vk-adapter)
+[![CodeFactor](https://www.codefactor.io/repository/github/tdakkota/joe-vk-adapter/badge)](https://www.codefactor.io/repository/github/tdakkota/joe-vk-adapter)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 This repository contains a module for the [Joe Bot library][joe]. Built using 
 [vksdk][vksdk].

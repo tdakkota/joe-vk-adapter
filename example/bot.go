@@ -2,12 +2,9 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"strings"
-
 	"github.com/go-joe/joe"
-	"github.com/go-joe/redis-memory"
-	vk "github.com/tdakkota/joe-vk-adapter"
+	"github.com/tdakkota/joe-vk-adapter"
+	"os"
 )
 
 type ExampleBot struct {
@@ -18,14 +15,13 @@ func main() {
 	b := &ExampleBot{
 		Bot: joe.New(
 			"example",
-			redis.Memory("localhost:6379"),
 			vk.Adapter(os.Getenv("BOT_TOKEN")),
 		),
 	}
 
-	b.Respond("(.+)", b.Taco)
 	b.Respond("remember (.+) is (.+)", b.Remember)
 	b.Respond("what is (.+)", b.WhatIs)
+	b.Respond("тако", b.Taco)
 
 	if err := b.Run(); err != nil {
 		b.Logger.Fatal(err.Error())
@@ -33,12 +29,7 @@ func main() {
 }
 
 func (b *ExampleBot) Taco(msg joe.Message) error {
-	text := msg.Matches[0]
-
-	if strings.Contains(text, "тако") {
-		msg.Respond("🌮")
-	}
-
+	msg.Respond("🌮")
 	return nil
 }
 

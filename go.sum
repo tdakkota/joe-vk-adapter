@@ -2,12 +2,15 @@ github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/SevereCloud/vksdk v1.2.1 h1:5aWQSER3D3BBjkSE4swxhjLD+yQUSxpNCK0kRJpIcPc=
 github.com/SevereCloud/vksdk v1.2.1/go.mod h1:qYx+oMLiRDso0NIGkV2zqOMn29N0hIbg69q0nXhDw18=
+github.com/SevereCloud/vksdk v1.3.0 h1:JFm1p/zVXG/wBKcmF9YVQ2ThzZoa4bh4XbryUQ5n3do=
+github.com/SevereCloud/vksdk v1.3.0/go.mod h1:APn7pT0i9OV5S9KBwzI4rWE84WOBXzRAMkjR0/ATIzw=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-joe/joe v0.10.0 h1:dEe0EHhHeshTDGy55Y4HGOZgj0L11TdeMlaTn5JOPQg=
 github.com/go-joe/joe v0.10.0/go.mod h1:fjDMMKm6GV29+egH/IS57PTKHSBMquckyuM7CmXbUQw=
 github.com/google/renameio v0.1.0/go.mod h1:KWCgfxg9yswjAJkECMjeO8J8rahYeXnNhOm40UhjYkI=
+github.com/gorilla/websocket v1.4.1/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=

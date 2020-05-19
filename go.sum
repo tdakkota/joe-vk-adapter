@@ -10,6 +10,8 @@ github.com/SevereCloud/vksdk v1.5.0 h1:EnOVENRwdS8VokZs/I4uUOZc3hbY+RQ/EUcVqJ0Li
 github.com/SevereCloud/vksdk v1.5.0/go.mod h1:M8rhuKgXhOcTU9H/4HvzMbZIw/T6ZrtIbnd83wQM6YA=
 github.com/SevereCloud/vksdk v1.6.0 h1:nX5kg49DUr0dr/aY1INpVUqsO3uO9wdAlZ5qPxcQ1Xo=
 github.com/SevereCloud/vksdk v1.6.0/go.mod h1:j64XT+5kqOmoESNg3Lo1mJYoNogPJ80OUADQ9HywIZg=
+github.com/SevereCloud/vksdk v1.7.0 h1:6YpkYDnSnk+e9tYELA+OG6xHcW+06yklmFjNk6lIoxk=
+github.com/SevereCloud/vksdk v1.7.0/go.mod h1:j64XT+5kqOmoESNg3Lo1mJYoNogPJ80OUADQ9HywIZg=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

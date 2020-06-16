@@ -12,6 +12,8 @@ github.com/SevereCloud/vksdk v1.6.0 h1:nX5kg49DUr0dr/aY1INpVUqsO3uO9wdAlZ5qPxcQ1
 github.com/SevereCloud/vksdk v1.6.0/go.mod h1:j64XT+5kqOmoESNg3Lo1mJYoNogPJ80OUADQ9HywIZg=
 github.com/SevereCloud/vksdk v1.8.0 h1:oYsay6fQZYXGF2LeqUdYD8H33noH9lE3dI+4pbkQTdU=
 github.com/SevereCloud/vksdk v1.8.0/go.mod h1:y73C70ga4MVsUPfoqShPqFJ5+FbqbMdaSg6uDiLxkLc=
+github.com/SevereCloud/vksdk v1.9.0 h1:sgCXYsF7MC5ue2pelunRuWSm6waK4cNcOg+DYYpTL+o=
+github.com/SevereCloud/vksdk v1.9.0/go.mod h1:qVkGsxEBVrYomxF6vIs/WTCXDiMYdABv1htSIiFZM0A=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -41,6 +43,7 @@ github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJy
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
 github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5cxcmMvtA=
 github.com/stretchr/testify v1.6.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 go.uber.org/atomic v1.3.2/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=
 go.uber.org/atomic v1.5.0 h1:OI5t8sDa1Or+q8AeE+yKeB/SDYioSHAgcVljj9JIETY=
 go.uber.org/atomic v1.5.0/go.mod h1:sABNBOSYdrvTF6hTgEIbc7YasKWGhgEQZyfxyTvoXHQ=

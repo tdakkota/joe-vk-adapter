@@ -6,5 +6,5 @@ require (
 	github.com/SevereCloud/vksdk v1.10.0
 	github.com/go-joe/joe v0.11.0
 	github.com/pkg/errors v0.9.1
-	go.uber.org/zap v1.20.0
+	go.uber.org/zap v1.26.0
 )
